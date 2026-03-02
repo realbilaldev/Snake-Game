@@ -1,0 +1,70 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:skyblue;
+}
+
+.board{
+    width:600px;
+    height:600px;
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    border:10px solid lightblue;
+    position:relative;
+}
+
+.cell{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.green{
+    background:#2785ae;
+    color:white;
+}
+
+.white{
+    background:white;
+    color:black;
+}
+
+/* Snake */
+.snake{
+    position:absolute;
+    width:80px;
+}
+
+.s1{
+    top:50px;
+    left:100px;
+    height: 150px;
+}
+
+.s2{
+    height: 150px;
+    top:300px;
+    left:300px;
+}
+
+/* Ladder */
+.ladder{
+    position:absolute;
+    width:70px;
+}
+
+.l1{
+    height: 150px;
+    top:150px;
+    left:250px;
+}
+
+.l2{
+    height:150px ;
+    top:350px;
+    left:400px;
+}
